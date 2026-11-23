@@ -1,0 +1,30 @@
+# CAMBIO: una sola regla para los directorios locales de Terraform.
+.terraform/
+
+# ELIMINADO: la regla .terraform.lock.hcl. Ese archivo se sube a Git.
+
+# Estado de Terraform
+*.tfstate
+*.tfstate.*
+.terraform.tfstate.lock.info
+
+# Logs de errores
+crash.log
+crash.*.log
+
+# Variables locales que pueden contener credenciales
+*.tfvars
+*.tfvars.json
+
+# Archivos de configuración local
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+
+# Planes guardados
+*tfplan*
+
+# Configuración local de Terraform CLI
+.terraformrc
+terraform.rc
